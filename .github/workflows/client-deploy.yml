@@ -19,8 +19,7 @@ jobs:
           cache: 'npm'
         
       - name: Install Dependencies
-        working-directory: client
-        run: npm install
+        run: npm run installFEDependencies
   build:
       runs-on: ubuntu-latest
       needs: installDependencies
