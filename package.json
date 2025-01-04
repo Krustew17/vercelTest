@@ -4,7 +4,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "installDependencies": "cd server && npm install && cd ../client && npm install",
+        "installBEDependencies": "cd server && npm install",
+        "installFEDependencies": "cd client && npm install",
         "start": "cd server && node index.js",
         "build": "cd client && npm run build"
     },
