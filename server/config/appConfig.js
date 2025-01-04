@@ -26,17 +26,20 @@ const appConfig = (app) => {
         );
         next();
     });
+    app.get("/", (req, res) => {
+        res.json({ message: "YOUR API FUCKING WORKS" });
+    });
 
     // app.use(
-    //     express.static(path.join(__dirname, "../public"), {
+    //     express.static(path.join(__dirname, "../../client/dist"), {
     //         setHeaders: (res, path) => {
     //             res.set("Cache-Control", "public, max-age=0");
     //         },
-    //     })
+    //     }),
     // );
 
     // app.get("*", (req, res) => {
-    //     res.sendFile(path.join(__dirname, "../public", "index.html"));
+    //     res.sendFile(path.join(__dirname, "../../client/dist", "index.html"));
     // });
 };
 export default appConfig;
