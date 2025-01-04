@@ -11,7 +11,7 @@ const registerRoutes = (app) => {
     //     middlewares.attachUser,
     //     userRoutes,
     // );
-    app.get("/", (req, res) => res.json({ message: "YOOOOOOOO U MADE IT!" }));
+    app.get("/", (req, res) => res.json({ message: "ONE LAST CHECK HEHE" }));
     app.get("/hehe", (req, res) => res.json({ message: "MAZNA BE BATIOO!" }));
 };
 
