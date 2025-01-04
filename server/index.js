@@ -2,7 +2,6 @@ import * as dotenv from "dotenv";
 import express from "express";
 
 import appConfig from "./config/appConfig.js";
-import config from "./config/index.js";
 
 dotenv.config();
 
