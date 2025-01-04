@@ -11,6 +11,8 @@ const registerRoutes = (app) => {
     //     middlewares.attachUser,
     //     userRoutes,
     // );
+    app.get("/", (req, res) => res.json({ message: "YOOOOOOOO U MADE IT!" }));
+    app.get("/hehe", (req, res) => res.json({ message: "MAZNA BE BATIOO!" }));
 };
 
 export default registerRoutes;
