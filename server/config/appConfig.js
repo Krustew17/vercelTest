@@ -30,7 +30,7 @@ const appConfig = (app) => {
         res.json({ message: "YOUR API FUCKING WORKS" });
     });
     app.get("/1", (req, res) => {
-        res.json({ message: "YOUR API FUCKING WORKS HEHEEHEHE12312" });
+        res.json({ message: "YOUR API FUCKING WORKS HEHEEHEHE gotin si" });
     });
 
     // app.use(
