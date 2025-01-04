@@ -29,6 +29,9 @@ const appConfig = (app) => {
     app.get("/", (req, res) => {
         res.json({ message: "YOUR API FUCKING WORKS" });
     });
+    app.get("/1", (req, res) => {
+        res.json({ message: "YOUR API FUCKING WORKS HEHEEHEHEHE" });
+    });
 
     // app.use(
     //     express.static(path.join(__dirname, "../../client/dist"), {
