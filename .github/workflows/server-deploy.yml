@@ -19,8 +19,7 @@ jobs:
           cache: 'npm'
         
       - name: Install Dependencies
-        working-directory: server
-        run: npm install
+        run: npm run installBEDependencies
   deploy:
     runs-on: ubuntu-latest
     needs: installDependencies
