@@ -22,7 +22,7 @@ const appConfig = (app) => {
         res.header("Access-Control-Allow-Origin", "*");
         res.header(
             "Access-Control-Allow-Headers",
-            "Origin, X-Requested-With, Content-Type, Accept"
+            "Origin, X-Requested-With, Content-Type, Accept",
         );
         next();
     });
@@ -35,8 +35,8 @@ const appConfig = (app) => {
     //     })
     // );
 
-    app.get("*", (req, res) => {
-        res.sendFile(path.join(__dirname, "../public", "index.html"));
-    });
+    // app.get("*", (req, res) => {
+    //     res.sendFile(path.join(__dirname, "../public", "index.html"));
+    // });
 };
 export default appConfig;

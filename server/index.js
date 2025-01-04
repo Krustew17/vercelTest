@@ -17,6 +17,7 @@ async function startServer() {
     //     .catch((err) => {
     //         console.log("Something went wrong synchronizing tables.");
     //     });
+
     app.listen(config.port, () => {
         console.log(`Server running on port ${config.port}`);
     }).on("error", (err) => {
