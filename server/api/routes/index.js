@@ -4,7 +4,7 @@ import testRoutes from "./test.js";
 const prefix = config.api.prefix;
 
 const registerRoutes = (app) => {
-    app.use(`${prefix}`, testRoutes);
+    app.use(`${prefix}/test`, testRoutes);
     // app.use(
     //     `${prefix}/users`,
     //     middlewares.verifyToken,
