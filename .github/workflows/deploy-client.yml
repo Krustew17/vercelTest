@@ -10,6 +10,17 @@ on:
             - main
 
 jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Install Dependencies
+              run: npm run installFEDependencies
+
+            - name: Build React Frontend
+              run: npm run build
+        
     Deploy-Production:
         runs-on: ubuntu-latest
         steps:
