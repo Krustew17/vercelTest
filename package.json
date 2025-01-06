@@ -11,5 +11,8 @@
     },
     "author": "krustew",
     "license": "ISC",
-    "description": "messing around"
+    "description": "messing around",
+    "dependencies": {
+        "mongoose": "^8.9.3"
+    }
 }
